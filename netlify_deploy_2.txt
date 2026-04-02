@@ -1,0 +1,131 @@
+﻿ ┬╗   Warning: --build is now the default and can safely be omitted.
+[96m[1mÔÇï[22m[39m
+[96m[1mNetlify Build                                                 [22m[39m
+[96m[1mÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ[22m[39m
+[36m[1mÔÇï[22m[39m
+[36m[1mÔØ» Version[22m[39m
+  @netlify/build 35.8.3
+[36m[1mÔÇï[22m[39m
+[36m[1mÔØ» Flags[22m[39m
+  accountId: 69ce99c3b6a78c1b4cc3f6e2
+  deployId: 69ce9d1e8db6fb3f69f390aa
+[36m[1mÔÇï[22m[39m
+[36m[1mÔØ» Current directory[22m[39m
+  C:\Proyectos\Web CRM  display\crm-admin
+[36m[1mÔÇï[22m[39m
+[36m[1mÔØ» Config file[22m[39m
+  No config file was defined: using default values.
+[36m[1mÔÇï[22m[39m
+[36m[1mÔØ» Context[22m[39m
+  production
+[36m[1mÔÇï[22m[39m
+[36m[1mÔØ» Using Next.js Runtime - v5.15.9[22m[39m
+[96m[1mÔÇï[22m[39m
+[96m[1mBuild command from Netlify app                                [22m[39m
+[96m[1mÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ[22m[39m
+ÔÇï
+[36m$ npm run build[39m
+
+> crm-admin@0.1.0 build
+> next build
+
+Ôû▓ Next.js 16.2.1 (Turbopack)
+- Environments: .env
+
+  Creating an optimized production build ...
+Ô£ô Compiled successfully in 5.3s
+  Running TypeScript ...
+  Finished TypeScript in 5.1s ...
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/11) ...
+  Generating static pages using 11 workers (2/11) 
+  Generating static pages using 11 workers (5/11) 
+  Generating static pages using 11 workers (8/11) 
+Ô£ô Generating static pages using 11 workers (11/11) in 390ms
+  Finalizing page optimization ...
+
+Route (app)
+Ôöî Ôùï /
+Ôö£ Ôùï /_not-found
+Ôö£ ãÆ /accounts
+Ôö£ ãÆ /accounts/[id]
+Ôö£ ãÆ /dashboard
+Ôö£ ãÆ /interactions
+Ôö£ ãÆ /leads
+Ôö£ Ôùï /login
+Ôö£ ãÆ /orders
+Ôöö ãÆ /tasks
+
+
+ãÆ Proxy (Middleware)
+
+Ôùï  (Static)   prerendered as static content
+ãÆ  (Dynamic)  server-rendered on demand
+
+ÔÇï
+[90m(build.command completed in 16s)[39m
+[96m[1mÔÇï[22m[39m
+[96m[1mFunctions bundling                                            [22m[39m
+[96m[1mÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ[22m[39m
+ÔÇï
+Packaging Functions from [36m.netlify\functions-internal[39m directory:
+ - ___netlify-server-handler\___netlify-server-handler.mjs
+ÔÇï
+ÔÇï
+[90m(Functions bundling completed in 1.3s)[39m
+[96m[1mÔÇï[22m[39m
+[96m[1mEdge Functions bundling                                       [22m[39m
+[96m[1mÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ[22m[39m
+ÔÇï
+Packaging Edge Functions from [36m.netlify\edge-functions[39m directory:
+ - ___netlify-edge-handler-middleware
+ÔÇï
+[90m(Edge Functions bundling completed in 2s)[39m
+[91m[1mÔÇï[22m[39m
+[91m[1mPlugin "@netlify/plugin-nextjs" failed                        [22m[39m
+[91m[1mÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ[22m[39m
+ÔÇï
+  [31m[1mError message[22m[39m
+  Error: Failed publishing static content
+ÔÇï
+  [31m[1mPlugin details[22m[39m
+  Package:        @netlify/plugin-nextjs
+  Version:        5.15.9
+  Repository:     git+https://github.com/opennextjs/opennextjs-netlify.git
+  npm link:       https://www.npmjs.com/package/@netlify/plugin-nextjs
+  Report issues:  https://github.com/opennextjs/opennextjs-netlify/issues
+ÔÇï
+  [31m[1mError location[22m[39m
+  In "onPostBuild" event in "@netlify/plugin-nextjs" from undefined
+ÔÇï
+  [31m[1mResolved config[22m[39m
+  build:
+    command: npm run build
+    commandOrigin: ui
+    publish: C:\Proyectos\Web CRM  display\crm-admin\.next
+    publishOrigin: ui
+  headers:
+    - for: /_next/static/*
+      values:
+        Cache-Control: public, max-age=31536000, immutable
+  headersOrigin: inline
+  plugins:
+    - inputs: {}
+      origin: default
+      package: "@netlify/plugin-nextjs"
+  redirects:
+    - from: /_next/image
+      query:
+        q: :quality
+        url: :url
+        w: :width
+      status: 200
+      to: /.netlify/images?url=:url&w=:width&q=:quality
+    - from: /_ipx/*
+      query:
+        q: :quality
+        url: :url
+        w: :width
+      status: 200
+      to: /.netlify/images?url=:url&w=:width&q=:quality
+  redirectsOrigin: inline

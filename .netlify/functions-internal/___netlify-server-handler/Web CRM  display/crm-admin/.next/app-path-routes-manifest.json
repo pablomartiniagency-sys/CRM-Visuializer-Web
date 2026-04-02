@@ -1,0 +1,14 @@
+{
+  "/(app)/accounts/[id]/page": "/accounts/[id]",
+  "/(app)/accounts/page": "/accounts",
+  "/(app)/dashboard/page": "/dashboard",
+  "/(app)/interactions/page": "/interactions",
+  "/(app)/leads/page": "/leads",
+  "/(app)/orders/page": "/orders",
+  "/(app)/tasks/page": "/tasks",
+  "/(auth)/login/page": "/login",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/"
+}

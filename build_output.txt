@@ -1,0 +1,48 @@
+
+> crm-admin@0.1.0 build
+> next build
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Proyectos\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Proyectos\Web CRM  display\crm-admin\package-lock.json
+
+▲ Next.js 16.2.1 (Turbopack)
+- Environments: .env
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+Error: Cannot apply unknown utility class `shadow-saas`
+    [2m[at onInvalidCandidate (C:\Proyectos\Web CRM  display\crm-admin\node_modules\tailwindcss\dist\lib.js:21:1511)][0m
+    [2m[at Ee (C:\Proyectos\Web CRM  display\crm-admin\node_modules\tailwindcss\dist\lib.js:16:37066)][0m
+    [2m[at C:\Proyectos\Web CRM  display\crm-admin\node_modules\tailwindcss\dist\lib.js:21:355][0m
+    [2m[at _r (C:\Proyectos\Web CRM  display\crm-admin\node_modules\tailwindcss\dist\lib.js:3:1733)][0m
+    [2m[at I (C:\Proyectos\Web CRM  display\crm-admin\node_modules\tailwindcss\dist\lib.js:3:1377)][0m
+    [2m[at Te (C:\Proyectos\Web CRM  display\crm-admin\node_modules\tailwindcss\dist\lib.js:21:172)][0m
+    [2m[at mn (C:\Proyectos\Web CRM  display\crm-admin\node_modules\tailwindcss\dist\lib.js:38:294)][0m
+    [2m[at async gn (C:\Proyectos\Web CRM  display\crm-admin\node_modules\tailwindcss\dist\lib.js:38:631)][0m
+    [2m[at async Xr (C:\Proyectos\Web CRM  display\crm-admin\node_modules\@tailwindcss\node\dist\index.js:10:3416)][0m
+    [2m[at async N (C:\Proyectos\Web CRM  display\crm-admin\node_modules\@tailwindcss\postcss\dist\index.js:10:3979)][0m
+
+> Build error occurred
+Error: Turbopack build failed with 1 errors:
+./Web CRM  display/crm-admin/src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Proyectos\Web CRM  display\crm-admin\src\app\globals.css:1:1: Cannot apply unknown utility class `shadow-saas`
+    at Input.error (Web CRM  display/crm-admin/node_modules/postcss/lib/input.js:135:16) [C:\Proyectos\Web CRM  display\crm-admin\.next\build\chunks\0ubo_0-udrj4._.js:4651:22]
+    at error (Web CRM  display/crm-admin/node_modules/postcss/lib/node.js:146:32) [C:\Proyectos\Web CRM  display\crm-admin\.next\build\chunks\0ubo_0-udrj4._.js:928:38]
+    [at Object.Once (C:\Proyectos\Web CRM  display\crm-admin\node_modules\@tailwindcss\postcss\dist\index.js:10:6913)]
+    at async LazyResult.runAsync (Web CRM  display/crm-admin/node_modules/postcss/lib/lazy-result.js:293:11) [C:\Proyectos\Web CRM  display\crm-admin\.next\build\chunks\0ubo_0-udrj4._.js:6214:21]
+    at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34) [C:\Proyectos\Web CRM  display\crm-admin\.next\build\chunks\[root-of-the-server]__0cg2ajr._.js:146:36]
+    at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23) [C:\Proyectos\Web CRM  display\crm-admin\.next\build\chunks\[root-of-the-server]__0m6wcy4._.js:443:31]
+
+Import trace:
+  Client Component Browser:
+    ./Web CRM  display/crm-admin/src/app/globals.css [Client Component Browser]
+    ./Web CRM  display/crm-admin/src/app/layout.tsx [Server Component]
+
+
+    at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34) [C:\Proyectos\Web CRM  display\crm-admin\.next\build\chunks\[root-of-the-server]__0cg2ajr._.js:146:36])
+    at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23) [C:\Proyectos\Web CRM  display\crm-admin\.next\build\chunks\[root-of-the-server]__0m6wcy4._.js:443:31])
