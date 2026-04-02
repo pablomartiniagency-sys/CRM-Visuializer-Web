@@ -39,20 +39,30 @@ export default async function OrdersPage() {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {orders?.map((order) => (
-              <TableRow key={order.order_id}>
-                <TableCell className="font-medium line-clamp-1 max-w-[120px]" title={order.order_id}>{order.order_id}</TableCell>
-                <TableCell>
-                  {/* @ts-ignore */}
-                  {order.accounts?.legal_name}
-                </TableCell>
-                <TableCell>{order.fecha_objetivo || '-'}</TableCell>
-                <TableCell>{order.temporada || '-'}</TableCell>
-                <TableCell>
-                  <Badge>{order.status}</Badge>
-                </TableCell>
-              </TableRow>
-            ))}
+            {orders?.map((order) => {
+              let variant: "default" | "secondary" | "destructive" | "success" | "warning" | "info" | "outline" = "outline"
+              const s = order.status?.toLowerCase() || ''
+              if (s.includes('draft') || s.includes('pending')) variant = "secondary"
+              if (s.includes('quote') || s.includes('quoted')) variant = "info"
+              if (s.includes('confirm') || s.includes('production')) variant = "warning"
+              if (s.includes('closed') || s.includes('done') || s.includes('success')) variant = "success"
+              if (s.includes('cancel') || s.includes('error')) variant = "destructive"
+
+              return (
+                <TableRow key={order.order_id}>
+                  <TableCell className="font-medium line-clamp-1 max-w-[120px]" title={order.order_id}>{order.order_id}</TableCell>
+                  <TableCell>
+                    {/* @ts-ignore */}
+                    {order.accounts?.legal_name}
+                  </TableCell>
+                  <TableCell>{order.fecha_objetivo || '-'}</TableCell>
+                  <TableCell>{order.temporada || '-'}</TableCell>
+                  <TableCell>
+                    <Badge variant={variant} className="capitalize">{order.status}</Badge>
+                  </TableCell>
+                </TableRow>
+              )
+            })}
             {(!orders || orders.length === 0) && (
               <TableRow>
                 <TableCell colSpan={5} className="text-center h-24 text-muted-foreground">

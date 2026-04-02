@@ -13,11 +13,12 @@ package = "@netlify/plugin-nextjs"
 
 [build]
 publish = "C:\\Proyectos\\Web CRM  display\\crm-admin\\.next"
-publishOrigin = "ui"
-commandOrigin = "ui"
+publishOrigin = "config"
+commandOrigin = "config"
 command = "npm run build"
 
 [build.environment]
+NEXT_PRIVATE_LOCAL_WEBPACK = "true"
 
 [build.processing]
 

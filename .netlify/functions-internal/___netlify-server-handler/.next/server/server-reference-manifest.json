@@ -1,0 +1,90 @@
+{
+  "node": {
+    "00757309148224b6a6fbb4d2c046532cbe9a233c21": {
+      "workers": {
+        "app/(app)/accounts/[id]/page": {
+          "moduleId": 34117,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/(app)/layout.tsx"
+        },
+        "app/(app)/accounts/page": {
+          "moduleId": 96351,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/(app)/layout.tsx"
+        },
+        "app/(app)/dashboard/page": {
+          "moduleId": 63090,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/(app)/layout.tsx"
+        },
+        "app/(app)/interactions/page": {
+          "moduleId": 90483,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/(app)/layout.tsx"
+        },
+        "app/(app)/leads/page": {
+          "moduleId": 61521,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/(app)/layout.tsx"
+        },
+        "app/(app)/orders/page": {
+          "moduleId": 48233,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/(app)/layout.tsx"
+        },
+        "app/(app)/tasks/page": {
+          "moduleId": 49383,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/(app)/layout.tsx"
+        }
+      },
+      "filename": "src/app/(app)/layout.tsx",
+      "exportedName": "$$RSC_SERVER_ACTION_0"
+    },
+    "40d86dceb9c77ff576c18f3ffee20f28feddfd31c1": {
+      "workers": {
+        "app/(app)/accounts/page": {
+          "moduleId": 96351,
+          "async": false,
+          "exportedName": "createAccount",
+          "filename": "src/lib/actions/accounts.ts"
+        }
+      },
+      "filename": "src/lib/actions/accounts.ts",
+      "exportedName": "createAccount"
+    },
+    "602e796a4370790b6500b053782b10fedd67325687": {
+      "workers": {
+        "app/(app)/accounts/page": {
+          "moduleId": 96351,
+          "async": false,
+          "exportedName": "updateAccount",
+          "filename": "src/lib/actions/accounts.ts"
+        }
+      },
+      "filename": "src/lib/actions/accounts.ts",
+      "exportedName": "updateAccount"
+    },
+    "40b16faf01d3544ec177d601ac27e7cce2d36baea5": {
+      "workers": {
+        "app/(auth)/login/page": {
+          "moduleId": 34584,
+          "async": false,
+          "exportedName": "login",
+          "filename": "src/app/(auth)/login/action.ts"
+        }
+      },
+      "filename": "src/app/(auth)/login/action.ts",
+      "exportedName": "login"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "ehvHFZgVgkTDRlC893KxOVFSu03/tn8w0TM3C5ENUY8="
+}

@@ -1,0 +1,3 @@
+module.exports=[74270,a=>{a.v({className:"inter_8db6fa51-module__MMaAbG__className",variable:"inter_8db6fa51-module__MMaAbG__variable"})},27572,a=>{"use strict";var b=a.i(7997),c=a.i(74270);let d={className:c.default.className,style:{fontFamily:"'Inter', 'Inter Fallback'",fontStyle:"normal"}};null!=c.default.variable&&(d.variable=c.default.variable),a.s(["default",0,function({children:a}){return(0,b.jsx)("html",{lang:"es",className:`${d.variable} h-full antialiased`,children:(0,b.jsx)("body",{className:"min-h-full flex flex-col font-sans",children:a})})},"metadata",0,{title:"Delega CRM Admin",description:"Panel de administración y ventas de Delega"}],27572)},50645,a=>{a.n(a.i(27572))}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__129~2g8._.js.map

@@ -40,20 +40,30 @@ export default async function LeadsPage() {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {leads?.map((lead) => (
-              <TableRow key={lead.lead_id}>
-                <TableCell className="font-medium">
-                  {/* @ts-ignore -- known strict type union behavior in supabase ts */}
-                  {lead.accounts?.legal_name || 'Desconocido'}
-                </TableCell>
-                <TableCell className="max-w-xs truncate">{lead.message_summary}</TableCell>
-                <TableCell className="capitalize">{lead.source_channel}</TableCell>
-                <TableCell>{lead.intent}</TableCell>
-                <TableCell>
-                  <Badge variant="outline">{lead.status}</Badge>
-                </TableCell>
-              </TableRow>
-            ))}
+            {leads?.map((lead) => {
+              let variant: "default" | "secondary" | "destructive" | "success" | "warning" | "info" | "outline" = "outline"
+              const s = lead.status?.toLowerCase() || ''
+              if (s === 'new') variant = "info"
+              if (s === 'contacted') variant = "secondary"
+              if (s === 'qualified') variant = "warning"
+              if (s === 'won') variant = "success"
+              if (s === 'lost') variant = "destructive"
+
+              return (
+                <TableRow key={lead.lead_id}>
+                  <TableCell className="font-medium">
+                    {/* @ts-ignore -- known strict type union behavior in supabase ts */}
+                    {lead.accounts?.legal_name || 'Desconocido'}
+                  </TableCell>
+                  <TableCell className="max-w-xs truncate">{lead.message_summary}</TableCell>
+                  <TableCell className="capitalize">{lead.source_channel}</TableCell>
+                  <TableCell>{lead.intent}</TableCell>
+                  <TableCell>
+                    <Badge variant={variant} className="capitalize">{lead.status}</Badge>
+                  </TableCell>
+                </TableRow>
+              )
+            })}
             {(!leads || leads.length === 0) && (
               <TableRow>
                 <TableCell colSpan={5} className="text-center h-24 text-muted-foreground">
