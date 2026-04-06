@@ -4,6 +4,9 @@ import { Badge } from "@/components/ui/badge"
 import { MOCK_LEADS, USE_MOCK } from "@/lib/mockData"
 
 import { LeadsViewSwitcher } from "@/components/kanban/LeadsViewSwitcher"
+import { EmptyState } from "@/components/ui/EmptyState"
+import { InfoTooltip } from "@/components/ui/InfoTooltip"
+import { Users } from "lucide-react"
 
 export default async function LeadsPage() {
   const supabase = await createClientServerClient()
@@ -74,12 +77,26 @@ export default async function LeadsPage() {
     </div>
   );
 
+  const hasLeads = leads && leads.length > 0;
+
   return (
     <div className="flex flex-col gap-2 w-full max-w-7xl mx-auto py-2">
       <div className="flex justify-between items-center mb-2">
-        <h1 className="text-2xl font-semibold tracking-tight text-foreground">Leads (Prospectos)</h1>
+        <h1 className="text-2xl font-semibold tracking-tight text-foreground flex items-center">
+          Leads (Prospectos)
+          <InfoTooltip content="Un Lead representa una oportunidad comercial. Arrástralos por el tablero Kanban para avanzar la negociación." />
+        </h1>
       </div>
-      <LeadsViewSwitcher initialLeads={leads} TableComponent={tableComponent} />
+      
+      {!hasLeads ? (
+        <EmptyState 
+          icon={Users}
+          title="Ningún Lead activo"
+          description="Crea tu primer Lead para dar seguimiento visual a clientes potenciales usando nuestra vista interactiva de Tablero."
+        />
+      ) : (
+        <LeadsViewSwitcher initialLeads={leads} TableComponent={tableComponent} />
+      )}
     </div>
   )
 }
