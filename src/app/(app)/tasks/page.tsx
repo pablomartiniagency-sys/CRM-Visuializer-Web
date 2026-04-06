@@ -3,9 +3,17 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Badge } from "@/components/ui/badge"
 import { MOCK_TASKS, USE_MOCK } from "@/lib/mockData"
 
+type TaskWithAccount = {
+  task_id: string;
+  title: string;
+  priority: string;
+  status: string;
+  accounts?: typeof MOCK_TASKS[0]['accounts'] | { legal_name: string } | null;
+};
+
 export default async function TasksPage() {
   const supabase = await createClientServerClient()
-  let tasks: any[] = USE_MOCK ? MOCK_TASKS : [];
+  let tasks: TaskWithAccount[] = USE_MOCK ? MOCK_TASKS as unknown as TaskWithAccount[] : [];
 
   if (!USE_MOCK) {
     const { data } = await supabase
@@ -35,7 +43,6 @@ export default async function TasksPage() {
               <TableRow key={t.task_id}>
                 <TableCell className="font-medium">{t.title}</TableCell>
                 <TableCell>
-                  {/* @ts-ignore */}
                   {t.accounts?.legal_name || '-'}
                 </TableCell>
                 <TableCell className="capitalize">{t.priority}</TableCell>

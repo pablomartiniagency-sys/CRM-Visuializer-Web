@@ -16,7 +16,7 @@ const accountSchema = z.object({
   notes: z.string().optional(),
 });
 
-export async function createAccount(data: any) {
+export async function createAccount(data: z.infer<typeof accountSchema>) {
   try {
     const validated = accountSchema.parse(data);
     const supabase = await createClientServerClient();
@@ -47,7 +47,7 @@ export async function createAccount(data: any) {
   }
 }
 
-export async function updateAccount(id: string, data: any) {
+export async function updateAccount(id: string, data: z.infer<typeof accountSchema>) {
   try {
     const validated = accountSchema.parse(data);
     const supabase = await createClientServerClient();

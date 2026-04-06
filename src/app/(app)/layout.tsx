@@ -3,6 +3,8 @@ import { redirect } from "next/navigation"
 import Link from "next/link"
 import { LayoutDashboard, LogOut } from "lucide-react"
 import { SidebarNav } from "@/components/layout/sidebar-nav"
+import { CommandMenu } from "@/components/layout/CommandMenu"
+import { HelpButton } from "@/components/layout/HelpButton"
 
 export default async function AppLayout({
   children,
@@ -58,10 +60,18 @@ export default async function AppLayout({
         </nav>
       </aside>
       <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-64">
-        {/* Mobile Header would go here */}
+        <header className="sticky top-0 z-30 flex h-14 items-center gap-4 border-b bg-background/95 px-4 backdrop-blur sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6 mb-4 justify-between">
+          <div className="hidden sm:block text-sm font-medium text-muted-foreground mr-auto">
+            {/* Breadcrumb or Title placeholder */}
+          </div>
+          <div className="w-full sm:w-auto ml-auto flex items-center justify-end gap-2">
+            <CommandMenu />
+          </div>
+        </header>
         <main className="grid flex-1 items-start gap-4 p-4 sm:px-6 sm:py-0 md:gap-8">
           {children}
         </main>
+        <HelpButton />
       </div>
     </div>
   )

@@ -1,4 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { LeadFunnelChart } from "@/components/dashboard/LeadFunnelChart"
+import { TasksPriorityChart } from "@/components/dashboard/TasksPriorityChart"
 
 export default function DashboardPage() {
   return (
@@ -43,6 +45,12 @@ export default function DashboardPage() {
             <p className="text-xs text-muted-foreground">Pendientes para hoy</p>
           </CardContent>
         </Card>
+      </div>
+      
+      {/* Analytics Charts Row */}
+      <div className="grid gap-4 md:grid-cols-2 md:gap-6 mt-4">
+        <LeadFunnelChart />
+        <TasksPriorityChart />
       </div>
     </div>
   )
